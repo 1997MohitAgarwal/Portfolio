@@ -546,7 +546,7 @@ hr {
 .formEntry {
   display: block;
   margin: 30px auto;
-  min-width: 300px;
+  min-width: 240px;
   padding: 10px;
   border-radius: 2px;
   border: none;
