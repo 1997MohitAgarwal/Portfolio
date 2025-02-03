@@ -8,7 +8,7 @@ export default function Home() {
         <img className="img rounded-circle p-2 border border-primary" src="/assets/images/profile.jpg" alt="profile"></img>
         <h4 className="mt-3">Hi<span><img width="50" src="/assets/images/moving1.gif"/></span>I am Mohit Agarwal</h4>
         <h4><strong>FRONTEND DEVELOPER</strong></h4>
-        <button className="float"><a className="link" href="/assets/images/Mohit2yrsResume.pdf" download >Download CV</a></button>
+        <button className="float"><a className="link" href="/assets/images/MohitResume.pdf" download >Download CV</a></button>
         <h5>Passionate and Enthusiast Frontend Developer</h5>
         <p className="mb-2">INNOVATION IS MY PASSION !!</p>
         <div className="social-media">

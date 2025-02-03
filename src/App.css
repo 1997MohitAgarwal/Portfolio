@@ -94,49 +94,7 @@ a.nav-link{
 .navbar{
   z-index:10
 }
-/* header{
-	margin: 0 auto;
-	width: 100%;
-	height: 70px;
-	display: flex;
-  align-items: center; 
-	justify-content:center; 
-  background: transparent;
-	position: fixed;
-	top: 0;
-	transition: 0.3s;
-	z-index: 5;
-}
-.nav-show{
-	opacity:0;
-}
 
-header:hover{
-	opacity: 0.8;
-	background: var(--main-header-background);
-}
-
-.nav-bar{
-	list-style:none;
-	position: relative;
-	display: inline-flex;
-}
-
-a.nav-link{
-	margin: 2px;
-	padding: 5px 10px;
-	text-decoration: none;
-	color: var(--main-fonts-color);
-	font-family: var(--main-font-family);
-	cursor: pointer;
-	text-transform: uppercase;
-}
-
-
-.nav-link:hover {
-	color: #000000;
-  background: var(--main-decor-color);
-} */
 #home{ 	
 	height: 90vh;
 	color: var(--main-fonts-color);
@@ -298,11 +256,8 @@ a{
 	padding: 10px 5px 0 5px;
   width:300px;
 	color:white;
-  font-size: 8px;
   background:#032f5e;
   word-wrap:break-word;
-	font-family: var(--main-font-family);
-	cursor: pointer;
 }
 
 .card a{
@@ -313,23 +268,118 @@ a{
 	box-shadow: 0 0 1.2rem #f7eded;
 }
 
-#contact{
-	margin:auto;
-	padding: 40px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	color:white;
+/* Contact Page Styles */
+.contact-page {
+  padding: 50px 20px;
+  background-color: #f4f7fa;
+  font-family: 'Arial', sans-serif;
 }
-	
-#contact p{
-	padding:10px;
-	text-align:center;
-  color:white;
-	font-size:1.2rem;
-	font-family: var(--main-font-family);
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.contact-info {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.contact-title {
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contact-description {
+  text-align: center;
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-item .contact-icon {
+  font-size: 30px;
+  color: #4CAF50;
+  margin-right: 20px;
+}
+
+.contact-details h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-details p {
+  font-size: 16px;
+  color: #555;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.form-title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+    width: 90%;
+  }
+
+  .contact-form {
+    width: 90%;
+  }
+}
+
 .social-media1{
 	padding: 10px;
 	display: flex;
@@ -353,12 +403,7 @@ a{
 .social-media1  a:hover {
 	color:#fff;
 }
-.contactMail {
-	color:#fdfcfc;
-}
-.contactMail:hover {
-	color:#fb5656;
-}
+
 footer {
   bottom:0;
 	width: 100%;
@@ -381,10 +426,10 @@ footer {
 }
 .float1{
   background-color:var(--main-decor-color);
-  padding:0.2rem 2rem;
+  padding:0.3rem 2rem;
   color:white;
   border:none;
-  border-radius:20px;
+  border-radius:5px;
   margin:2vh 0;
 }
 .link{
@@ -455,6 +500,7 @@ hr {
   flex-direction:column;
   flex-wrap:wrap;
   justify-content:center;
+  width:90vw;
   align-items:center;
   gap:50px;
   margin:auto;
@@ -462,19 +508,6 @@ hr {
 #title-Tag-Line {
   font-size: 20px;
 }
-/* .card-item__bg{
-  width: 150px;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  display: block;
-  position: relative;
-  margin: 30px auto;
-  transform: translate(0px, 50px);
-  z-index: 5;
-} */
-
 /* form animation starts */
 .form {
   background: #fff;
@@ -567,6 +600,8 @@ hr {
   border-top: 5px solid #fb6565;
   border-radius: 0%;
 }
+
+
 
 
 

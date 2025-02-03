@@ -1,48 +1,53 @@
-import React from "react"
-import {useState,useEffect} from "react"
-export default function Contact() {
-  const [status,setStatus]=useState(false)
-  const [name,setName]=useState("")
-  const [mail,setMail]=useState("")
-  const [message,setMessage]=useState("")
-  function handleSubmit(e){
-    e.preventDefault()
-  }
-  function handleChange1(e){
-    setName(e.target.value)
-  }
-  function handleChange2(e){
-    setMail(e.target.value)
-  }
-  function handleChange3(e){
-    setMessage(e.target.value)
-  }
-  function handleClick(){
-    name && mail && message?setStatus(true):""
-  }
-  useEffect(()=>{
-    setTimeout(()=>{
-      status===true?setStatus(false):""
-    },2000)
-  },[status])
+import React from 'react';
+import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+
+const ContactPage = () => {
   return (
-    <div id="contact">
-      <h3>Contact<hr /></h3>
-      {/* <br />
-      <p><strong>I'd Love To Hear From You</strong></p>
-      <br />
-      <div class="social-media1">
-        <a style={{ textDecoration: "none" }} href="https://www.linkedin.com/in/mohit-agarwal-099744235/" target="_blank"><i class='fab fa-linkedin'></i> linkedIn</a>
+    <div className="contact-page">
+      <div className="container">
+        <div className="contact-info">
+          <h2 className="contact-title">Get In Touch</h2>
+          <p className="contact-description">
+            I'm always open to new opportunities and collaborations. Feel free to reach out to me through any of the following channels!
+          </p>
+
+          <div className="contact-item">
+            <FaPhone className="contact-icon" />
+            <div className="contact-details">
+              <h3>Phone</h3>
+              <p>+91 91012 48329</p>
+            </div>
+          </div>
+
+          <div className="contact-item">
+            <FaEnvelope className="contact-icon" />
+            <div className="contact-details">
+              <h3>Email</h3>
+              <p>mohitagarwal4567@gmail.com</p>
+            </div>
+          </div>
+
+          <div className="contact-item">
+            <FaMapMarkerAlt className="contact-icon" />
+            <div className="contact-details">
+              <h3>Location</h3>
+              <p>Guwahati, Assam</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="contact-form">
+          <h2 className="form-title">Contact Me</h2>
+          <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" className="submit-btn">Send Message</button>
+          </form>
+        </div>
       </div>
-      <p href="www.gmail.com" className="contactMail"><i class='fa solid fa-envelope'></i> mohitagarwal4567@gmail.com</p> */}
-    <form onSubmit={handleSubmit} class="form px-3">
-      <div class="pageTitle titlevalue">Chat with me !! </div>
-      <input type="text" class="name formEntry" value={name} onChange={handleChange1} placeholder="Name" required />
-      <input type="text" class="email formEntry" value={mail} onChange={handleChange2} placeholder="Email" required/>
-      <textarea class="message formEntry" value={message} onChange={handleChange3} placeholder="Message" required></textarea>
-      <button onClick={handleClick} class="submit formEntry">Send Message</button>
-      {status && <p style={{color:"black"}}>Your message has been sent.</p>}
-    </form>
     </div>
-  )
-}
+  );
+};
+
+export default ContactPage;
