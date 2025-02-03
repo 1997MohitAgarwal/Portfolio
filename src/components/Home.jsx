@@ -13,8 +13,7 @@ export default function Home() {
         <p className="mb-2">INNOVATION IS MY PASSION !!</p>
         <div className="social-media">
           <a href="https://www.linkedin.com/in/mohit-agarwal-099744235/" target="_blank"><i class='fab fa-linkedin'></i></a>
-          <a href="https://twitter.com/Mohit16081997" target="_blank"><i class='fab fa-twitter'></i></a>
-          <a href="https://github.com/stupendo1238" target="_blank"><i class='fab fa-github'></i></a>
+          <a href="https://github.com/1997MohitAgarwal" target="_blank"><i class='fab fa-github'></i></a>
         </div>
 
       </section>
