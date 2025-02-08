@@ -1,49 +1,49 @@
-import React from "react"
+import React from "react";
 
 export default function Skills() {
+  const skills = [
+    { name: "React", src: "/assets/images/react-removebg-preview.png" },
+    { name: "HTML", src: "/assets/images/html-removebg-preview.png" },
+    { name: "JavaScript", src: "/assets/images/js-removebg-preview.png" },
+    { name: "CSS", src: "/assets/images/css-removebg-preview.png" },
+    { name: "Bootstrap", src: "/assets/images/boo-removebg-preview.png" },
+    { name: "Redux", src: "/assets/images/redux1-removebg-preview.png" },
+    { name: "Tailwind", src: "/assets/images/csstail-removebg-preview.png" },
+    { name: "Next.js", src: "/assets/images/nextjs-removebg-preview.png" },
+    { name: "TypeScript", src: "/assets/images/ts.png" },
+    { name: "Git", src: "/assets/images/git-removebg-preview.png" },
+    { name: "Chart.js", src: "/assets/images/chartjs-logo.png" },
+    { name: "Vite", src: "/assets/images/vite.png" },
+  ];
+
   return (
-    <div id="skills">
-      <h3 className="mt-5 pt-3">Skills<hr /></h3>
-      <div style={{marginBottom:"50px"}} className="containerbox">
-      <img className="rounded" width="350" src="/assets/images/main.gif"></img>
-      <div className="box my-auto mx-auto">
-        <div className="w-25">
-         <img width="70" height="50" src="/assets/images/react-removebg-preview.png"></img>
-         <p style={{fontSize:"15px"}}>React</p>
-        </div>
-         <div  className="w-25">
-         <img width="50" height="50" src="/assets/images/html-removebg-preview.png"></img>
-          <p style={{fontSize:"15px"}}>HTML</p>
-        </div>
-         <div  className="w-25">
-         <img width="70" height="50" src="/assets/images/js-removebg-preview.png"></img>
-          <p style={{fontSize:"15px"}}>JavaScript</p>
-        </div>
-         <div  className="w-25">
-         <img width="50" height="50" src="/assets/images/css-removebg-preview.png"></img>
-          <p style={{fontSize:"15px"}}>CSS</p>
-        </div>
-         <div  className="w-25">
-         <img width="80" height="50" src="/assets/images/boo-removebg-preview.png"></img>
-          <p style={{fontSize:"15px"}}>Bootstrap</p>
-        </div>
-         <div  className="w-25">
-         <img width="50" height="50" src="/assets/images/redux1-removebg-preview.png"></img>
-          <p style={{fontSize:"15px"}}>Redux</p>
-        </div>
-        <div  className="w-25">
-         <img width="50" height="50" src="/assets/images/csstail-removebg-preview.png"></img>
-          <p style={{fontSize:"15px"}}>Tailwind</p>
-        </div>
-         <div  className="w-25">
-         <img width="50" height="50" src="/assets/images/nextjs-removebg-preview.png"></img>
-          <p style={{fontSize:"15px"}}>Next Js</p>
-        </div>
-        <div  className="w-25">
-         <img width="100" height="50" src="/assets/images/git-removebg-preview.png"></img>
-          <p style={{fontSize:"15px"}}>Git</p>
-        </div>
+    <div id="skills" className="bg-black text-white py-16 px-6 text-center">
+      {/* Section Title */}
+      <h3 className="text-3xl font-bold inline-block border-b-4 border-yellow-500 pb-2">
+        Skills
+      </h3>
+
+      {/* Main GIF */}
+      <div className="flex justify-center mt-8">
+        <img
+          className="rounded-xl shadow-lg w-full max-w-[350px] hover:scale-105 transition-transform duration-300"
+          src="/assets/images/main.gif"
+          alt="Main GIF"
+        />
       </div>
+
+      {/* Skills Grid */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 mt-10 max-w-5xl mx-auto">
+        {skills.map((skill, index) => (
+          <div
+            key={index}
+            className="bg-gray-800 p-4 rounded-lg shadow-md flex flex-col items-center transition-transform duration-300 hover:scale-110"
+          >
+            <img src={skill.src} alt={skill.name} className="w-12 h-12 mb-2" />
+            <p className="text-sm font-semibold">{skill.name}</p>
+          </div>
+        ))}
       </div>
     </div>
-  )}
+  );
+}

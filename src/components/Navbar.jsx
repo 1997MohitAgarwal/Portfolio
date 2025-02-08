@@ -1,37 +1,56 @@
-import React from "react"
+import React, { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 export default function Navbar() {
-  return (
-    <nav class="navbar navbar-expand-lg navbar-dark bg">
-      <a class="navbar-brand" href="#">
-    <img className="rounded-circle" src="/assets/images/profile.jpg" width="45" height="45" alt="profile"/>
-  </a>
-      <a class="navbar-brand" href="#">MY PORTFOLIO</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  const [isOpen, setIsOpen] = useState(false);
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div>
-          <ul class="navbar-nav mr-auto ">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#education">Education</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
+  return (
+    <nav className="bg-gray-900 py-1 text-sky-400 shadow-md w-full z-100">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+          
+          {/* Left Side: Logo */}
+          <div className="flex items-center">
+            <a href="#about" className="flex items-center space-x-2">
+              <img 
+                className="rounded-full border border-sky-400" 
+                src="/assets/images/profile.jpg" 
+                width="45" 
+                height="45" 
+                alt="profile"
+              />
+              <span className="font-bold text-lg">MY PORTFOLIO</span>
+            </a>
+          </div>
+
+          {/* Hamburger Menu Button */}
+          <div className="md:hidden">
+            <button onClick={() => setIsOpen(!isOpen)} className="text-sky-400 focus:outline-none text-2xl">
+              {isOpen ? <FaTimes /> : <FaBars />}
+            </button>
+          </div>
+
+          {/* Navigation Links */}
+          <div className={`md:flex space-x-6 hidden`}>
+            <a href="#about" className="hover:text-white transition">Home</a>
+            <a href="#education" className="hover:text-white transition">Education</a>
+            <a href="#skills" className="hover:text-white transition">Skills</a>
+            <a href="#projects" className="hover:text-white transition">Projects</a>
+            <a href="#contact" className="hover:text-white transition">Contact</a>
+          </div>
         </div>
       </div>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className={`md:hidden bg-gray-800 text-sky-400 py-3 space-y-3 text-center`}>
+          <a href="#about" className="block hover:text-white transition">Home</a>
+          <a href="#education" className="block hover:text-white transition">Education</a>
+          <a href="#skills" className="block hover:text-white transition">Skills</a>
+          <a href="#projects" className="block hover:text-white transition">Projects</a>
+          <a href="#contact" className="block hover:text-white transition">Contact</a>
+        </div>
+      )}
     </nav>
-  )
+  );
 }

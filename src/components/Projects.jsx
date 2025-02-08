@@ -1,166 +1,104 @@
 import React from "react";
 
 export default function Projects() {
+  const projects = [
+    {
+      img: "/assets/images/dashboard.gif",
+      title: "Dashboard Application",
+      description: "Email: user@example.com Password: password123",
+      link: "https://dashboard-analytics-x8x4.vercel.app/",
+    },
+    {
+      img: "/assets/images/weath.gif",
+      title: "Weather App",
+      description: "Fetches weather details and 5-day forecast.",
+      link: "https://weather-app-seven-pi-82.vercel.app/",
+    },
+    {
+      img: "/assets/images/crypto.gif",
+      title: "Crypto App",
+      description: "Fetches different cryptocurrency data.",
+      link: "https://fintechcrypto.vercel.app/",
+    },
+    {
+      img: "/assets/images/food.gif",
+      title: "Food Recipes App",
+      description: "Find recipes using any ingredient.",
+      link: "https://food-app-7hj.vercel.app",
+    },
+    {
+      img: "/assets/images/textutility.gif",
+      title: "Text Utility App",
+      description: "Modify text styles, cases, and more.",
+      link: "https://text-utility-pi.vercel.app/",
+    },
+    {
+      img: "/assets/images/Chatbot.gif",
+      title: "AI Chatbot",
+      description: "A smart chatbot for answering queries.",
+      link: "https://chat-ai-nu-flame.vercel.app/",
+    },
+    {
+      img: "/assets/images/news.gif",
+      title: "News App",
+      description: "Fetches news based on different categories.",
+      link: "https://india-fission-news.vercel.app/",
+    },
+    {
+      img: "/assets/images/dashboard.gif",
+      title: "Dashboard UI",
+      description: "Dashboard with charts and a beautiful UI.",
+      link: "https://dashboard-chi-sable.vercel.app/",
+    },
+    {
+      img: "/assets/images/UI.gif",
+      title: "Complex UI Design",
+      description: "Responsive complex UI design.",
+      link: "https://ui-design-page-one.vercel.app/",
+    },
+    {
+      img: "/assets/images/stocks.gif",
+      title: "Stocks App",
+      description: "Stores stock data and NSE top news.",
+      link: "https://stocksdata.vercel.app/",
+    },
+  ];
+
   return (
-    <div id="projects" className="pb-5 pt-3">
-      <h3>
+    <div id="projects" className="bg-gray-900 py-16 px-8 text-white">
+      <h3 className="text-sky-400 text-3xl font-semibold text-center mb-8">
         My Projects
-        <hr />
+        <hr className="border-sky-400 mt-2 w-24 mx-auto" />
       </h3>
-      <p>Here are some of my projects, you may like.</p>
-      <div class="work-box">
-        <div class="work">
-          <div class="card">
+      <p className="text-center text-gray-300 mb-12">
+        Here are some of my projects you may like.
+      </p>
+
+      {/* Flexbox Container */}
+      <div className="flex flex-wrap justify-center gap-8">
+        {projects.map((project, index) => (
+          <div
+            key={index}
+            className="bg-black p-6 rounded-2xl shadow-lg hover:shadow-sky-500 transition duration-300 flex flex-col items-center w-[calc(25%-2rem)] max-w-[300px] min-w-[300px]"
+          >
             <img
-              width="170"
-              height="170"
-              class="work-img"
-              src="/assets/images/dashboard.gif"
+              src={project.img}
+              alt={project.title}
+              className="w-32 h-32 object-cover rounded-lg"
             />
-            <p class="work-content">
-              Dashboard Application. Email: user@example.com Password:
-              password123
+            <h4 className="text-xl text-sky-400 mt-4 font-semibold text-center">
+              {project.title}
+            </h4>
+            <p className="text-gray-300 text-sm text-center mt-2">
+              {project.description}
             </p>
-            <a
-              href="https://dashboard-analytics-x8x4.vercel.app/"
-              target="_blank"
-            >
-              <button className="float1">Link</button>
+            <a href={project.link} target="_blank" className="mt-4">
+              <button className="bg-sky-500 hover:bg-sky-600 text-white px-6 py-2 rounded-lg">
+                Visit
+              </button>
             </a>
           </div>
-          <div class="card">
-            <img
-              width="170"
-              height="170"
-              class="work-img"
-              src="/assets/images/weath.gif"
-            />
-            <p class="work-content">
-              An application that fetches weather details of a city and forecast 5 days weather.
-            </p>
-            <a href="https://weather-app-seven-pi-82.vercel.app/" target="_blank">
-              <button className="float1">Link</button>
-            </a>
-          </div>
-          <div class="card">
-            <img
-              width="170"
-              height="170"
-              class="work-img"
-              src="/assets/images/crypto.gif"
-            />
-            <p class="work-content">
-              A cryptocurrency Application that fetches different crypto data.
-            </p>
-            <a
-              href="https://fintechcrypto.vercel.app/"
-              target="_blank"
-            >
-              <button className="float1">Link</button>
-            </a>
-          </div>
-          <div class="card">
-            <img
-              width="170"
-              height="170"
-              class="work-img"
-              src="/assets/images/food.gif"
-            />
-            <p class="work-content">
-              An Application that helps you with food recipes with any
-              ingredient.
-            </p>
-            <a href="https://food-app-7hj.vercel.app" target="_blank">
-              <button className="float1">Link</button>
-            </a>
-          </div>
-          <div class="card">
-            <img
-              width="170"
-              height="170"
-              class="work-img"
-              src="/assets/images/textutility.gif"
-            />
-            <p class="work-content">
-              Text Utility App that helps you to change your text styles,case
-              etc..
-            </p>
-            <a href="https://text-utility-pi.vercel.app" target="_blank">
-              <button className="float1">Link</button>
-            </a>
-          </div>
-          <div class="card">
-            <img
-              width="170"
-              height="170"
-              class="work-img"
-              src="/assets/images/Chatbot.gif"
-            />
-            <p class="work-content">
-              A smart chatbot that assists you with the query you provide to it.
-            </p>
-            <a href="https://chat-ai-nu-flame.vercel.app" target="_blank">
-              <button className="float1">Link</button>
-            </a>
-          </div>
-          <div class="card">
-            <img
-              width="170"
-              height="170"
-              class="work-img"
-              src="/assets/images/news.gif"
-            />
-            <p class="work-content">
-              News app that fetches news based on different categories.
-            </p>
-            <a href="https://india-fission-news.vercel.app" target="_blank">
-              <button className="float1">Link</button>
-            </a>
-          </div>
-          <div class="card">
-            <img
-              width="170"
-              height="170"
-              class="work-img"
-              src="/assets/images/dashboard.gif"
-            />
-            <p class="work-content">
-              Dashboard Application with Charts and beautiful User Interface
-            </p>
-            <a href="https://dashboard-chi-sable.vercel.app" target="_blank">
-              <button className="float1">Link</button>
-            </a>
-          </div>
-          <div class="card">
-            <img
-              width="170"
-              height="170"
-              class="work-img"
-              src="/assets/images/UI.gif"
-            />
-            <p class="work-content">
-              A complex UI design and maintaining its responsiveness
-            </p>
-            <a href="https://ui-design-page-one.vercel.app" target="_blank">
-              <button className="float1">Link</button>
-            </a>
-          </div>
-          <div class="card">
-            <img
-              width="170"
-              height="170"
-              class="work-img"
-              src="/assets/images/stocks.gif"
-            />
-            <p class="work-content">
-              A Stock app which stores stocks data and NSE top news with
-              discussions
-            </p>
-            <a href="https://stocksdata.vercel.app" target="_blank">
-              <button className="float1">Link</button>
-            </a>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
