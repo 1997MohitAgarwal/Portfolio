@@ -5,7 +5,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-gray-900 py-1 text-sky-400 shadow-md w-full z-100">
+    <nav className="bg-gray-950 text-sky-400 shadow-md w-full z-100">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           
@@ -43,12 +43,12 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className={`md:hidden bg-gray-800 text-sky-400 py-3 space-y-3 text-center`}>
-          <a href="#about" className="block hover:text-white transition">Home</a>
-          <a href="#education" className="block hover:text-white transition">Education</a>
-          <a href="#skills" className="block hover:text-white transition">Skills</a>
-          <a href="#projects" className="block hover:text-white transition">Projects</a>
-          <a href="#contact" className="block hover:text-white transition">Contact</a>
+        <div className={`md:hidden bg-gray-900 text-sky-400 py-3 px-6 space-y-3 text-left`}>
+          <a href="#about" className="block border-b border-white pb-3 hover:text-white">Home</a>
+          <a href="#education" className="block border-b border-white pb-3 hover:text-white">Education</a>
+          <a href="#skills" className="block border-b pb-3 border-white hover:text-white">Skills</a>
+          <a href="#projects" className="block border-b border-white pb-3 hover:text-white">Projects</a>
+          <a href="#contact" className="block hover:text-white">Contact</a>
         </div>
       )}
     </nav>
