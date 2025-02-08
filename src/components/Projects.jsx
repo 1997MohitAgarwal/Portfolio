@@ -32,24 +32,24 @@ export default function Projects() {
       description: "Modify text styles, cases, and more.",
       link: "https://text-utility-pi.vercel.app/",
     },
-    // {
-    //   img: "/assets/images/Chatbot.gif",
-    //   title: "AI Chatbot",
-    //   description: "A smart chatbot for answering queries.",
-    //   link: "https://chat-ai-nu-flame.vercel.app/",
-    // },
+    {
+      img: "/assets/images/Chatbot.gif",
+      title: "AI Chatbot",
+      description: "A smart chatbot for answering queries.",
+      link: "https://chat-ai-nu-flame.vercel.app/",
+    },
     // {
     //   img: "/assets/images/news.gif",
     //   title: "News App",
     //   description: "Fetches news based on different categories.",
     //   link: "https://india-fission-news.vercel.app/",
     // },
-    {
-      img: "/assets/images/dashboard.gif",
-      title: "Dashboard UI",
-      description: "Dashboard with charts and a beautiful UI.",
-      link: "https://dashboard-chi-sable.vercel.app/",
-    },
+    // {
+    //   img: "/assets/images/dashboard.gif",
+    //   title: "Dashboard UI",
+    //   description: "Dashboard with charts and a beautiful UI.",
+    //   link: "https://dashboard-chi-sable.vercel.app/",
+    // },
     {
       img: "/assets/images/UI.gif",
       title: "Complex UI Design",
