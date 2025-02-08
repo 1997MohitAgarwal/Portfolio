@@ -33,6 +33,20 @@ export default function Projects() {
               width="170"
               height="170"
               class="work-img"
+              src="/assets/images/weath.gif"
+            />
+            <p class="work-content">
+              An application that fetches weather details of a city and forecast 5 days weather.
+            </p>
+            <a href="https://weather-app-seven-pi-82.vercel.app/" target="_blank">
+              <button className="float1">Link</button>
+            </a>
+          </div>
+          <div class="card">
+            <img
+              width="170"
+              height="170"
+              class="work-img"
               src="/assets/images/crypto.gif"
             />
             <p class="work-content">
@@ -57,20 +71,6 @@ export default function Projects() {
               ingredient.
             </p>
             <a href="https://food-app-7hj.vercel.app" target="_blank">
-              <button className="float1">Link</button>
-            </a>
-          </div>
-          <div class="card">
-            <img
-              width="170"
-              height="170"
-              class="work-img"
-              src="/assets/images/news.gif"
-            />
-            <p class="work-content">
-              News app that fetches news based on different categories.
-            </p>
-            <a href="https://india-fission-news.vercel.app" target="_blank">
               <button className="float1">Link</button>
             </a>
           </div>
@@ -108,13 +108,12 @@ export default function Projects() {
               width="170"
               height="170"
               class="work-img"
-              src="/assets/images/todos.gif"
+              src="/assets/images/news.gif"
             />
             <p class="work-content">
-              A Todo app with login, Email="eve.holt@reqres.in" Password=
-              cityslicka
+              News app that fetches news based on different categories.
             </p>
-            <a href="https://todo-app-plum-two-75.vercel.app" target="_blank">
+            <a href="https://india-fission-news.vercel.app" target="_blank">
               <button className="float1">Link</button>
             </a>
           </div>
