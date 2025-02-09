@@ -44,10 +44,10 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className={`md:hidden bg-gray-900 py-2 px-6 space-y-2 text-left`}>
-          <a href="#about" className="w-1/3 block border-b-2 pb-1 rounded-lg border-yellow-500 pl-3 hover:text-white">Home</a>
-          <a href="#education" className="w-1/3 block border-b-2 pb-1 rounded-lg border-yellow-500 pl-3 hover:text-white">Education</a>
-          <a href="#skills" className="w-1/3 block border-b-2 pb-1 rounded-lg border-yellow-500 pl-3 hover:text-white">Skills</a>
-          <a href="#projects" className="w-1/3 block border-b-2 pb-1 rounded-lg border-yellow-500 pl-3 hover:text-white">Projects</a>
+          <a href="#about" className="w-1/3 block border-b-2 pb-1 rounded-lg pl-3 hover:text-white">Home</a>
+          <a href="#education" className="w-1/3 block border-b-2 pb-1 rounded-lg pl-3 hover:text-white">Education</a>
+          <a href="#skills" className="w-1/3 block border-b-2 pb-1 rounded-lg pl-3 hover:text-white">Skills</a>
+          <a href="#projects" className="w-1/3 block border-b-2 pb-1 rounded-lg pl-3 hover:text-white">Projects</a>
           <a href="#contact" className="w-1/3 block hover:text-white pl-3">Contact</a>
         </div>
       )}
