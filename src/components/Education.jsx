@@ -29,7 +29,7 @@ export default function Education() {
             descr: "Class X (2012-2013)",
           },
         ].map((edu, index) => (
-          <div key={index} className="mb-10 ml-8 flex flex-col items-start relative">
+          <div key={index} className="mb-10 ml-8 shadow-lg hover:shadow-sky-500 transition hover:scale-101 flex flex-col items-start relative">
             {/* Icon */}
             <div className="absolute -left-14.5 top-10 w-12 h-12 flex items-center justify-center bg-sky-400 text-black rounded-full shadow-lg">
               {edu.icon}

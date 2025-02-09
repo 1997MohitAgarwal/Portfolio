@@ -65,7 +65,7 @@ export default function Projects() {
   ];
 
   return (
-    <div id="projects" className="bg-gray-900 py-16 px-8 text-white">
+    <div id="projects" className="bg-gray-950 py-16 px-8 text-white">
       <h3 className="text-sky-400 text-3xl font-semibold text-center mb-8">
         My Projects
         <hr className="border-sky-400 mt-2 w-24 mx-auto" />
@@ -79,7 +79,7 @@ export default function Projects() {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-black p-6 rounded-2xl shadow-lg hover:shadow-sky-500 transition duration-300 flex flex-col items-center w-[calc(25%-2rem)] max-w-[300px] min-w-[300px]"
+            className="bg-gray-900 p-6 rounded-2xl shadow-lg hover:shadow-sky-500 transition duration-300 flex flex-col items-center w-[calc(25%-2rem)] max-w-[300px] min-w-[300px]"
           >
             <img
               src={project.img}

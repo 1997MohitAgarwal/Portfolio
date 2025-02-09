@@ -20,13 +20,13 @@ const ContactPage = () => {
         </p>
 
         <div className="space-y-6">
-          <div className="flex flex-col items-center bg-gray-700 p-4 rounded-lg text-center">
+          <div className="flex flex-col shadow-md hover:shadow-sky-500 transition items-center bg-gray-700 p-4 rounded-lg text-center">
             <FaPhone className="text-blue-400 text-2xl mb-2" />
             <h3 className="text-lg font-semibold">Phone</h3>
             <p className="text-gray-300">+91 91012 48329</p>
           </div>
 
-          <div className="flex flex-col items-center bg-gray-700 p-4 rounded-lg text-center">
+          <div className="flex flex-col shadow-md hover:shadow-sky-500 transition items-center bg-gray-700 p-4 rounded-lg text-center">
             <FaEnvelope className="text-blue-400 text-2xl mb-2" />
             <h3 className="text-lg font-semibold">Email</h3>
             <p className="text-gray-300 break-words text-sm sm:text-base">
@@ -34,7 +34,7 @@ const ContactPage = () => {
             </p>
           </div>
 
-          <div className="flex flex-col items-center bg-gray-700 p-4 rounded-lg text-center">
+          <div className="flex flex-col shadow-md hover:shadow-sky-500 transition items-center bg-gray-700 p-4 rounded-lg text-center">
             <FaMapMarkerAlt className="text-blue-400 text-2xl mb-2" />
             <h3 className="text-lg font-semibold">Location</h3>
             <p className="text-gray-300">Guwahati, Assam</p>
