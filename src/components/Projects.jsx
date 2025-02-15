@@ -3,6 +3,12 @@ import React from "react";
 export default function Projects() {
   const projects = [
     {
+      img: "/assets/images/Chatbot.gif",
+      title: "AI Chatbot",
+      description: "A smart chatbot for generating HTML,CSS.",
+      link: "https://chatbot-mvp.vercel.app/",
+    },
+    {
       img: "/assets/images/dashboard.gif",
       title: "Dashboard Application",
       description: "Email: user@example.com Password: password123",
@@ -31,12 +37,6 @@ export default function Projects() {
       title: "Text Utility App",
       description: "Modify text styles, cases, and more.",
       link: "https://text-utility-pi.vercel.app/",
-    },
-    {
-      img: "/assets/images/Chatbot.gif",
-      title: "AI Chatbot",
-      description: "A smart chatbot for answering queries.",
-      link: "https://chat-ai-nu-flame.vercel.app/",
     },
     // {
     //   img: "/assets/images/news.gif",
