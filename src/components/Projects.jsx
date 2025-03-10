@@ -4,15 +4,21 @@ export default function Projects() {
   const projects = [
     {
       img: "/assets/images/Chatbot.gif",
-      title: "AI Chatbot",
-      description: "A smart chatbot for generating HTML,CSS.",
-      link: "https://chatbot-mvp.vercel.app/",
+      title: "Resume Review Bot",
+      description: "A smart AI for Reviewing resumes and suggestions.",
+      link: "https://resume-pro-ivory.vercel.app/",
     },
     {
-      img: "/assets/images/dashboard.gif",
-      title: "Dashboard Application",
-      description: "Email: user@example.com Password: password123",
-      link: "https://dashboard-analytics-x8x4.vercel.app/",
+      img: "/assets/images/crypto.gif",
+      title: "Crypto App",
+      description: "Fetches different cryptocurrency data.",
+      link: "https://fintechcrypto.vercel.app/",
+    },
+    {
+      img: "/assets/images/Chatbot.gif",
+      title: "HTML CSS Generator",
+      description: "A smart AI for generating HTML,CSS and Preview.",
+      link: "https://chatbot-mvp.vercel.app/",
     },
     {
       img: "/assets/images/weath.gif",
@@ -21,10 +27,10 @@ export default function Projects() {
       link: "https://weather-app-seven-pi-82.vercel.app/",
     },
     {
-      img: "/assets/images/crypto.gif",
-      title: "Crypto App",
-      description: "Fetches different cryptocurrency data.",
-      link: "https://fintechcrypto.vercel.app/",
+      img: "/assets/images/dashboard.gif",
+      title: "Dashboard Application",
+      description: "Email: user@example.com Password: password123",
+      link: "https://dashboard-analytics-x8x4.vercel.app/",
     },
     {
       img: "/assets/images/food.gif",
@@ -75,11 +81,11 @@ export default function Projects() {
       </p>
 
       {/* Flexbox Container */}
-      <div className="flex flex-wrap justify-center gap-8">
+      <div className="flex flex-wrap justify-center gap-10">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-gray-900 p-6 rounded-2xl shadow-lg hover:shadow-sky-500 transition duration-300 flex flex-col items-center w-[calc(25%-2rem)] max-w-[300px] min-w-[300px]"
+            className="bg-gray-900 p-4 lg:p-6 rounded-2xl shadow-lg hover:shadow-sky-500 transition duration-300 flex flex-col items-center w-[calc(30%-2rem)] max-w-[400px] min-w-[260px]"
           >
             <img
               src={project.img}
