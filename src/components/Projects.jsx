@@ -58,9 +58,9 @@ export default function Projects() {
     // },
     {
       img: "/assets/images/UI.gif",
-      title: "Complex UI Design",
-      description: "Responsive complex UI design.",
-      link: "https://ui-design-page-one.vercel.app/",
+      title: "Beautiful Landing Page",
+      description: "Responsive Landing Page UI design.",
+      link: "https://minimalist-landing-page.vercel.app/",
     },
     {
       img: "/assets/images/stocks.gif",
